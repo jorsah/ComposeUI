@@ -36,5 +36,6 @@ fun TopAppBar() {
                 contentDescription = "Top app bar icon",
                 tint = Color.Black
             )
-        })
+        }
+    )
 }

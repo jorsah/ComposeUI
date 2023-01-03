@@ -14,7 +14,7 @@ import com.google.maps.android.compose.MarkerState
 fun MapMarker(
     context: Context,
     markerModel: MarkerModel,
-    onClick: (MarkerModel) -> Unit = {  }
+    onClick: (MarkerModel) -> Unit = { }
 ) {
     val icon = bitmapDescriptor(
         context, markerModel.iconResourceId
@@ -36,7 +36,6 @@ fun bitmapDescriptor(
     vectorResId: Int
 ): BitmapDescriptor? {
 
-    // retrieve the actual drawable
     val drawable = ContextCompat.getDrawable(context, vectorResId) ?: return null
     drawable.setBounds(0, 0, drawable.intrinsicWidth, drawable.intrinsicHeight)
     val bm = Bitmap.createBitmap(
@@ -45,7 +44,6 @@ fun bitmapDescriptor(
         Bitmap.Config.ARGB_8888
     )
 
-    // draw it onto the bitmap
     val canvas = android.graphics.Canvas(bm)
     drawable.draw(canvas)
     return BitmapDescriptorFactory.fromBitmap(bm)

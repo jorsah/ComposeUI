@@ -10,7 +10,6 @@ private val ColorPalette = darkColors(
     secondary = Teal200
 )
 
-
 @Composable
 fun UITaskTheme(content: @Composable () -> Unit) {
     val colors = ColorPalette

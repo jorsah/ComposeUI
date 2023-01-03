@@ -50,7 +50,6 @@ fun MainScreen() {
     }
     val context = LocalContext.current
 
-
     if (markerState.value != null) {
         AlertDialog(markerState)
     }
@@ -114,7 +113,8 @@ fun MainScreen() {
                 .background(Color.White)
                 .padding(65.dp)
         ) {
-            Image(modifier = Modifier.size(260.dp),
+            Image(
+                modifier = Modifier.size(260.dp),
                 painter = painterResource(id = R.drawable.my_addresses),
                 contentDescription = "no addresses image"
             )
@@ -124,5 +124,4 @@ fun MainScreen() {
             TextButton(modifier = Modifier.width(173.dp), onClick = { notificationPermissionState.launchPermissionRequest() }, text = "Add")
         }
     }
-
 }

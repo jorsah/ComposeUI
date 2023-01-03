@@ -76,7 +76,7 @@ fun AlertDialog(markerModel: MutableState<MarkerModel?>) {
                         color = Gray,
                         modifier = Modifier
                             .padding(horizontal = 8.dp)
-                            .height(12.dp)  //fill the max height
+                            .height(12.dp)
                             .width(1.dp)
                     )
                     TextWithIcon(
@@ -120,5 +120,4 @@ fun AlertDialog(markerModel: MutableState<MarkerModel?>) {
             }
         }
     }
-
 }

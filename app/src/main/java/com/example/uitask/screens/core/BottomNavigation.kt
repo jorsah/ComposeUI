@@ -71,11 +71,11 @@ fun BottomNavigation(navController: NavController) {
             )
 
             TextButton(
-                modifier =  Modifier
+                modifier = Modifier
                     .padding(start = 12.dp)
                     .clip(shape = RoundedCornerShape(12.dp))
                     .size(width = 75.dp, height = 48.dp),
-                onClick = {/*TODO*/},
+                onClick = { /*TODO*/ },
                 text = "Find"
             )
         }
